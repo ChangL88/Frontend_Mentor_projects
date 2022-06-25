@@ -1,0 +1,32 @@
+:root{
+ --soft_red: hsl(10, 79%, 65%);
+ --cyan: hsl(186, 34%, 60%);
+ --dark_brown: hsl(25, 47%, 15%);
+ --medium_brown: hsl(28, 10%, 53%);
+ --cream: hsl(27, 66%, 92%);
+ --very_pale_orange: hsl(33, 100%, 98%);
+}
+
+body{
+    font-size: 18px;
+    font-family: 'DM Sans';
+    background-color: var(--cream);
+}
+
+.balance{
+    background-color: var(--soft_red);
+    color: white;
+}
+
+.spending{
+    background-color: white;
+    color: var(--dark_brown)
+}
+
+@media screen and (max-width: 375px){
+    
+}
+
+@media screen and (max-width: 1440px){
+    
+}
