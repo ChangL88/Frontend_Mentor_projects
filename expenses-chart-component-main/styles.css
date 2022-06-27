@@ -10,17 +10,80 @@
 body{
     font-size: 18px;
     font-family: 'DM Sans';
+    font-weight: 700;
     background-color: var(--cream);
 }
 
 .balance{
     background-color: var(--soft_red);
     color: white;
+    margin: 4em 0.4em 1em;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.balance_text{
+    height: 48px;
+}
+
+.balance p{
+    margin: 0;
+    font-weight: 400;
+}
+
+.balance h3{
+    margin: 0;
+    font-weight: 700;
+}
+
+.balance img{
+    position: relative;
+    float: right;
+}
+
 
 .spending{
     background-color: white;
-    color: var(--dark_brown)
+    color: var(--medium_brown);
+    border-radius: 12px;
+    margin: 0 0.4em 1em;
+    padding: 20px;
+    margin-bottom: auto;
+}
+
+
+.spending h2, h5{
+    color: var(--dark_brown);
+}
+/* Weird bug. 
+.spending h2, h3, h5 also targets h3 in .balance */
+.spending h3{
+    color: var(--dark_brown);
+}
+
+
+.spending ul{
+    list-style: none;
+    border-bottom: solid var(--cream) 1px;
+    padding: 0 0 18px 0;
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+
+.spending li{
+    background-color: var(--soft_red);
+    width: 1.8em;
+    border-radius: 4px;
+}
+
+.spending_text{
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 375px){
