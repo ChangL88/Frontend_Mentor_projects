@@ -43,6 +43,10 @@ body{
     float: right;
 }
 
+hr{
+    border: solid var(--cream) 1px;
+}
+
 
 .spending{
     background-color: white;
@@ -54,11 +58,11 @@ body{
 }
 
 
-.spending h2, h5{
+.spending h1, h5{
     color: var(--dark_brown);
 }
 /* Weird bug. 
-.spending h2, h3, h5 also targets h3 in .balance */
+.spending h1, h3, h5 also targets h3 in .balance */
 .spending h3{
     color: var(--dark_brown);
 }
@@ -66,24 +70,76 @@ body{
 
 .spending ul{
     list-style: none;
-    border-bottom: solid var(--cream) 1px;
-    padding: 0 0 18px 0;
-    height: 10rem;
+    padding: 0 0 36px 0;
+    height: 16rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
+    position: relative;
+    margin-top: 4rem;
 }
 
 
 .spending li{
     background-color: var(--soft_red);
-    width: 1.8em;
+    width: 2.4em;
     border-radius: 4px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
 }
+
+
+
+.spending li .day{
+    position: absolute;
+    display: block;
+    width: 2.4em;
+    text-align: center;
+    bottom: 0;
+}
+
+
+.spending li .amount{
+    display: none;
+    position: relative;
+    background-color: var(--dark_brown);
+    color: white;
+    font-weight: 700;
+    bottom: 2.5rem;
+    border-radius: 4px;
+    height: 22px;
+    padding: 4px;
+}
+
 
 .spending_text{
     display: flex;
     justify-content: space-between;
+}
+
+.spending_left p{
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.spending_left h1{
+    margin-top: 8px;
+}
+
+.spending_right{
+    padding-top: 1.5rem
+}
+
+.spending_right p{
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+.spending_right h5{
+    margin-bottom: 0px;
+    font-weight: 700;
+    text-align: right;
 }
 
 @media screen and (max-width: 375px){
