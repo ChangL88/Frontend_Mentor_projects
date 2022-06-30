@@ -12,7 +12,16 @@ body{
     font-family: 'DM Sans';
     font-weight: 700;
     background-color: var(--cream);
+    max-width: 450px;
+    margin: 0 0.5rem;
+    min-height: 200%;
 }
+
+p{
+    font-size: 16px;
+}
+
+/* Upper box */
 
 .balance{
     background-color: var(--soft_red);
@@ -43,16 +52,18 @@ body{
     float: right;
 }
 
-hr{
-    border: solid var(--cream) 1px;
-}
+
+
+/* Lower box */
+
+
 
 
 .spending{
     background-color: white;
     color: var(--medium_brown);
     border-radius: 12px;
-    margin: 0 0.4em 1em;
+    margin: 0 0.4em;
     padding: 20px;
     margin-bottom: auto;
 }
@@ -68,10 +79,13 @@ hr{
 }
 
 
+/* Lower bax - Chart */
+
 .spending ul{
     list-style: none;
     padding: 0 0 36px 0;
-    height: 16rem;
+    height: 20vh;
+    max-height: 10rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -82,7 +96,9 @@ hr{
 
 .spending li{
     background-color: var(--soft_red);
-    width: 2.4em;
+    width: 10vw;
+    width: 11%;
+    max-width: 2.7rem;
     border-radius: 4px;
     font-weight: 400;
     display: flex;
@@ -112,40 +128,56 @@ hr{
     padding: 4px;
 }
 
+hr{
+    border: solid var(--cream) 1px;
+}
+
+/* Lower box - Bottom */
+
 
 .spending_text{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .spending_left p{
-    margin-bottom: 8px;
+    margin-bottom: .2em;
     font-weight: 400;
 }
 
 .spending_left h1{
-    margin-top: 8px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
 }
 
-.spending_right{
-    padding-top: 1.5rem
-}
 
 .spending_right p{
-    margin-top: 0px;
+    margin: 0px;
     font-weight: 400;
 }
 
 .spending_right h5{
     margin-bottom: 0px;
+    font-size: 18px;
     font-weight: 700;
     text-align: right;
 }
 
-@media screen and (max-width: 375px){
-    
+@media screen and (min-width: 450px){
+    body{
+        margin: auto;
+    }
+    .balance, .spending{
+        padding: 20px 30px;
+    }
 }
 
-@media screen and (max-width: 1440px){
-    
-}
+/* @media screen and (min-width: 450px){
+    body{
+        margin: auto;
+    }
+} */
