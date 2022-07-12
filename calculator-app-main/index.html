@@ -20,30 +20,47 @@
     <main class="calc">
         <div class="container">
             <div class="outer">
-                <p>calc</p>
+                <h6>calc</h6>
+                <p>THEME</p>
                 <div class="theme">
-                    <p class="theme_count">123</p>
-                    <p>THEME<button class="theme_btn"></button></p>
+                    
+                    <div class="radio theme_count">
+                        <input id="1" name="rating" value="1" type="radio">
+                        <label for="1" class="circle">1</label>
+                        <input id="2" name="rating" value="2" type="radio">
+                        <label for="2" class="circle">2</label>
+                        <input id="3" name="rating" value="3" type="radio">
+                        <label for="3" class="circle">3</label>
+                    </div>
+                    
+                    <!-- reference https://stackoverflow.com/questions/23661970/3-state-css-toggle-switch -->
                 </div>
+                
+                
+                
             </div>
             <div class="result">
-
+                <h2>399,981</h2>
             </div>
             <div class="keypad">
-                <button>                </button>
-                <button>                </button>
-                <button>                </button>
-                <button id="del">                </button>
-                <button>                </button>
-                <button>                </button>
-                <button>                </button>
-                <button>                </button>
-                <button>                </button>
-                <button>                </button>
-                <button>                </button>
-                <button>                </button>
-                <button id="reset">                </button>
-                <button id="calc">                </button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button id="del">DEL</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>+</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>-</button>
+                <button>.</button>
+                <button>0</button>
+                <button>/</button>
+                <button>x</button>
+                <button id="reset">RESET</button>
+                <button id="calc">=</button>
             </div>
         </div>
     </main>

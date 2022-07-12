@@ -40,7 +40,137 @@
     --t3-txt-primary:hsl(52, 100%, 62%);
     --t3-txt-secondary:hsl(198, 20%, 13%);
 }
+html, main, .container{
+    height: 85vh;
+}
 
 body{
+    background-color: var(--t1-main-bg);
     font-size: 32px;
+    font-family: 'league spartan', sans-serif;
+    font-weight: 900;
+    padding: 1.5rem 1rem;
+    color: white;
+    height: 100%;
+}
+
+
+h6{
+    margin: 0;
+    font-weight: bold;
+    font-size: 32px;
+    align-self: flex-end;
+}
+
+p{
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin: 0px;
+}
+
+.outer p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.theme{
+    width: 72px;
+    display: grid;
+}
+
+input:checked{
+    background-color: var(--t1-btn-secondary);
+    color: var(--t1-btn-secondary);
+}
+
+.theme_count{
+    background-color: var(--t1-pad-bg);
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    height: 28px;
+    align-self: flex-end;
+    border-radius: 48px;
+}
+
+label{
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+}
+
+div.outer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+div.theme{
+    margin-right: 0px;
+}
+
+.result{
+    background-color: var(--t1-screen-bg);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 12px;
+    padding: 0.5em 1em;
+    font-weight: bolder;
+    font-size: 28px
+}
+
+.result h2{
+    text-align: right;
+    margin: 0px;
+}
+
+.keypad{
+    background-color: var(--t1-pad-bg);
+    margin: 20px 0px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 70%;
+    gap: 17px 13px;
+    border-radius: 12px;
+}
+
+.keypad button{
+    border: none;
+    color: var(--t1-txt);
+    background-color: var(--t1-btn-tertiary);
+    box-shadow: 0 4px var(--t1-shadow-tertiary);
+    border-radius: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'league spartan', sans-serif;
+    padding-top: 8px;
+}
+
+#del{
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: var(--t1-btn-primary);
+    box-shadow: 0 4px var(--t1-shadow-primary);
+}
+
+#reset{
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: var(--t1-btn-primary);
+    box-shadow: 0 4px var(--t1-shadow-primary);
+    grid-row: 5;
+    grid-column: 1 / span 2;
+}
+#calc{
+    color: white;
+    background-color: var(--t1-btn-secondary);
+    box-shadow: 0 4px var(--t1-shadow-secondary);
+    grid-row: 5;
+    grid-column: 3 / span 2;
 }
