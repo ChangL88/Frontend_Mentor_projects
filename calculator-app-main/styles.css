@@ -44,6 +44,8 @@ html, main, .container{
     height: 85vh;
 }
 
+
+
 body{
     background-color: var(--t1-main-bg);
     font-size: 32px;
@@ -53,6 +55,11 @@ body{
     color: white;
     height: 100%;
 }
+
+
+
+
+
 
 
 h6{
@@ -127,6 +134,10 @@ div.theme{
     margin: 0px;
 }
 
+
+
+
+/* Theme 1 default colors */
 .keypad{
     background-color: var(--t1-pad-bg);
     margin: 20px 0px;
@@ -173,4 +184,86 @@ div.theme{
     box-shadow: 0 4px var(--t1-shadow-secondary);
     grid-row: 5;
     grid-column: 3 / span 2;
+}
+
+
+/* Theme 2 colors */
+
+.theme2{
+    background-color: var(--t2-main-bg);
+    color: var(--t2-txt);
+}
+
+.result.theme2{
+    background-color: var(--t2-screen-bg);
+}
+
+
+.keypad.theme2{
+    background-color: var(--t2-pad-bg);
+}
+
+.keypad.theme2 button{
+    color: var(--t2-txt);
+    background-color: var(--t2-btn-tertiary);
+    box-shadow: 0 4px var(--t2-shadow-tertiary);
+}
+
+.keypad.theme2 #del{
+    color: white;
+    background-color: var(--t2-btn-primary);
+    box-shadow: 0 4px var(--t2-shadow-primary);
+}
+
+.keypad.theme2 #reset{
+    color: white;
+    background-color: var(--t2-btn-primary);
+    box-shadow: 0 4px var(--t2-shadow-primary);
+}
+
+.keypad.theme2 #calc{
+    color: white;
+    background-color: var(--t2-btn-secondary);
+    box-shadow: 0 4px var(--t2-shadow-secondary);
+}
+
+
+/* Theme 3 colors */
+
+.theme3{
+    background-color: var(--t3-main-bg);
+    color: var(--t3-txt-primary);
+}
+
+.result.theme3{
+    background-color: var(--t3-pad-bg);
+}
+
+
+.keypad.theme3{
+    background-color: var(--t3-pad-bg);
+}
+
+.keypad.theme3 button{
+    color: var(--t3-txt);
+    background-color: var(--t3-btn-tertiary);
+    box-shadow: 0 4px var(--t3-shadow-tertiary);
+}
+
+.keypad.theme3 #del{
+    color: white;
+    background-color: var(--t3-btn-primary);
+    box-shadow: 0 4px var(--t3-shadow-primary);
+}
+
+.keypad.theme3 #reset{
+    color: white;
+    background-color: var(--t3-btn-primary);
+    box-shadow: 0 4px var(--t3-shadow-primary);
+}
+
+.keypad.theme3 #calc{
+    color: var(--t3-txt-secondary);
+    background-color: var(--t3-btn-secondary);
+    box-shadow: 0 4px var(--t3-shadow-secondary);
 }
