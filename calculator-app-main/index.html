@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Spartan">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="theme2">
+<body class="">
     <main class="calc">
         <div class="container">
             <div class="outer">
@@ -24,13 +24,9 @@
                 <p>THEME</p>
                 <div class="theme">
                     
-                    <div class="radio theme_count">
-                        <input id="1" name="rating" value="1" type="radio">
-                        <label for="1" class="circle">1</label>
-                        <input id="2" name="rating" value="2" type="radio">
-                        <label for="2" class="circle">2</label>
-                        <input id="3" name="rating" value="3" type="radio">
-                        <label for="3" class="circle">3</label>
+                    <div class="theme_count">
+                        <span>1 2 3</span>
+                        <input type="range" min="1" max="3" value="1" class="slider">
                     </div>
                     
                     <!-- reference https://stackoverflow.com/questions/23661970/3-state-css-toggle-switch -->
@@ -40,10 +36,10 @@
                 
                 
             </div>
-            <div class="result theme2">
+            <div class="result ">
                 <h2>399,981</h2>
             </div>
-            <div class="keypad theme2">
+            <div class="keypad ">
                 <button>7</button>
                 <button>8</button>
                 <button>9</button>
