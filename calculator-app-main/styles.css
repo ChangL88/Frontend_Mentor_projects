@@ -81,6 +81,7 @@ p{
     font-size: 12px;
     font-weight: bold;
     margin-left: 80px;
+    margin-bottom: 6px;
 }
 
 .theme{
@@ -110,7 +111,7 @@ input:checked{
     position: absolute;
     display: inline-block;
     top: -20px;
-    right: 12px;
+    right: 2px;
     width: 5em;
     margin: 0px 8px;
     text-align: justify;
@@ -121,38 +122,7 @@ input:checked{
     
 }
 
-.slider{
-    -webkit-appearance: none;
-    background-color: var(--t1-pad-bg);
-    height: 28px;
-    border-radius: 48px;
-    margin: 0px 8px;
-    width: 5em;
-}
 
-.slider::-moz-range-thumb {
-    -webkit-appearance: none;
-    background: var(--t1-btn-secondary);
-    border-radius: 48px;
-    height: 16px;
-    width: 16px;
-    border-left: 8px;
-    border: none;
-}
-
-.slider::-moz-range-thumb {
-    -webkit-appearance: none;
-    background: var(--t1-btn-secondary);
-    cursor: pointer;
-    border-radius: 48px;
-    height: 16px;
-    width: 16px;
-    border: none;
-}
-
-.slider.theme2{
-    background-color: var(--t2-pad-bg)
-}
 
 label{
     position: relative;
@@ -189,6 +159,35 @@ div.theme{
 
 
 /* Theme 1 default colors */
+
+.slider{
+    -webkit-appearance: none;
+    background-color: var(--t1-pad-bg);
+    height: 28px;
+    border-radius: 48px;
+    margin: 0px 8px;
+    width: 5em;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--t1-btn-secondary);
+    border-radius: 48px;
+    height: 16px;
+    width: 16px;
+    border-left: 8px;
+    border: none;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    background: var(--t1-btn-secondary);
+    border-radius: 48px;
+    height: 16px;
+    width: 16px;
+    border: none;
+}
+
 .keypad{
     background-color: var(--t1-pad-bg);
     margin: 20px 0px;
@@ -240,6 +239,23 @@ div.theme{
 
 /* Theme 2 colors */
 
+.theme_count.theme2{
+    background-color: var(--t2-pad-bg);
+}
+
+.slider.theme2{
+    background-color: var(--t2-pad-bg);
+}
+
+.slider.theme2::-webkit-slider-thumb {
+    background: var(--t2-btn-secondary);
+}
+
+.slider.theme2::-moz-range-thumb {
+    background: var(--t2-btn-secondary);
+}
+
+
 .theme2{
     background-color: var(--t2-main-bg);
     color: var(--t2-txt);
@@ -280,6 +296,22 @@ div.theme{
 
 
 /* Theme 3 colors */
+
+.theme_count.theme3{
+    background-color: var(--t3-pad-bg);
+}
+
+.slider.theme3{
+    background-color: var(--t3-pad-bg);
+}
+
+.slider.theme3::-webkit-slider-thumb {
+    background: var(--t3-btn-secondary);
+}
+
+.slider.theme3::-moz-range-thumb {
+    background: var(--t3-btn-secondary);
+}
 
 .theme3{
     background-color: var(--t3-main-bg);

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Spartan">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="">
+<body class="theme2" onload="track_slider()">
     <main class="calc">
         <div class="container">
             <div class="outer">
@@ -24,38 +24,36 @@
                 <p>THEME</p>
                 <div class="theme">
                     
-                    <div class="theme_count">
+                    <div class="theme_count theme2">
                         <span>1 2 3</span>
-                        <input type="range" min="1" max="3" value="1" class="slider">
+                        <input type="range" min="1" max="3" value="1" id="slider" class="slider theme2">
                     </div>
                     
-                    <!-- reference https://stackoverflow.com/questions/23661970/3-state-css-toggle-switch -->
-                    <!-- Try slider next-->
                 </div>
                 
                 
                 
             </div>
-            <div class="result ">
-                <h2>399,981</h2>
+            <div class="result theme2">
+                <h2>0</h2>
             </div>
-            <div class="keypad ">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+            <div class="keypad theme2">
+                <button onclick="edit_h2(7)">7</button>
+                <button onclick="edit_h2(8)">8</button>
+                <button onclick="edit_h2(9)">9</button>
                 <button id="del">DEL</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>+</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>-</button>
-                <button>.</button>
-                <button>0</button>
-                <button>/</button>
-                <button>x</button>
+                <button onclick="edit_h2(4)">4</button>
+                <button onclick="edit_h2(5)">5</button>
+                <button onclick="edit_h2(6)">6</button>
+                <button onclick="edit_h2('+')">+</button>
+                <button onclick="edit_h2(1)">1</button>
+                <button onclick="edit_h2(2)">2</button>
+                <button onclick="edit_h2(3)">3</button>
+                <button onclick="edit_h2('-')">-</button>
+                <button onclick="edit_h2('.')">.</button>
+                <button onclick="edit_h2(0)">0</button>
+                <button onclick="edit_h2('/')">/</button>
+                <button onclick="edit_h2('*')">x</button>
                 <button id="reset">RESET</button>
                 <button id="calc">=</button>
             </div>
