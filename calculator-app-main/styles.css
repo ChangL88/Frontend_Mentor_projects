@@ -40,10 +40,15 @@
     --t3-txt-primary:hsl(52, 100%, 62%);
     --t3-txt-secondary:hsl(198, 20%, 13%);
 }
-html, main, .container{
-    height: 85vh;
+
+html{
+    min-width: 325px;
 }
 
+html, main, .container{
+    height: 85vh;
+    /* min-width: 325px; */
+}
 
 
 body{
@@ -54,11 +59,10 @@ body{
     padding: 1.5rem 1rem;
     color: white;
     height: 100%;
+    max-width: 30rem;
+    min-width: 277px;
+    margin: 8px auto;
 }
-
-
-
-
 
 
 
@@ -66,7 +70,7 @@ h6{
     margin: 0;
     font-weight: bold;
     font-size: 32px;
-    align-self: flex-end;
+    margin-right: auto;
 }
 
 p{
@@ -77,10 +81,17 @@ p{
     margin: 0px;
 }
 
+
 .outer p{
     font-size: 12px;
     font-weight: bold;
-    margin-left: 80px;
+    margin-bottom: 6px;
+    margin-right: .5rem;
+    padding-right: 32px;
+    /* position: absolute; */
+    /* right: 90px; */
+    margin-right: 8px;
+    /* display: flex; */
 }
 
 .theme{
@@ -96,12 +107,26 @@ input:checked{
 .theme_count{
     background-color: var(--t1-pad-bg);
     display: flex;
-    justify-content: space-around;
+    position: relative;
+    right: 10px;
     font-size: 12px;
     height: 28px;
     align-self: flex-end;
     border-radius: 48px;
 }
+
+.theme_count span{
+    position: absolute;
+    display: inline-block;
+    top: -20px;
+    right: 2px;
+    width: 5em;
+    margin: 0px 8px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+
 
 label{
     position: relative;
@@ -111,7 +136,7 @@ label{
 
 div.outer{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 
@@ -138,6 +163,35 @@ div.theme{
 
 
 /* Theme 1 default colors */
+
+.slider{
+    -webkit-appearance: none;
+    background-color: var(--t1-pad-bg);
+    height: 28px;
+    border-radius: 48px;
+    margin: 0px 8px;
+    width: 5em;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--t1-btn-secondary);
+    border-radius: 48px;
+    height: 16px;
+    width: 16px;
+    border-left: 8px;
+    border: none;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    background: var(--t1-btn-secondary);
+    border-radius: 48px;
+    height: 16px;
+    width: 16px;
+    border: none;
+}
+
 .keypad{
     background-color: var(--t1-pad-bg);
     margin: 20px 0px;
@@ -189,6 +243,23 @@ div.theme{
 
 /* Theme 2 colors */
 
+.theme_count.theme2{
+    background-color: var(--t2-pad-bg);
+}
+
+.slider.theme2{
+    background-color: var(--t2-pad-bg);
+}
+
+.slider.theme2::-webkit-slider-thumb {
+    background: var(--t2-btn-secondary);
+}
+
+.slider.theme2::-moz-range-thumb {
+    background: var(--t2-btn-secondary);
+}
+
+
 .theme2{
     background-color: var(--t2-main-bg);
     color: var(--t2-txt);
@@ -230,6 +301,22 @@ div.theme{
 
 /* Theme 3 colors */
 
+.theme_count.theme3{
+    background-color: var(--t3-pad-bg);
+}
+
+.slider.theme3{
+    background-color: var(--t3-pad-bg);
+}
+
+.slider.theme3::-webkit-slider-thumb {
+    background: var(--t3-btn-secondary);
+}
+
+.slider.theme3::-moz-range-thumb {
+    background: var(--t3-btn-secondary);
+}
+
 .theme3{
     background-color: var(--t3-main-bg);
     color: var(--t3-txt-primary);
@@ -266,4 +353,10 @@ div.theme{
     color: var(--t3-txt-secondary);
     background-color: var(--t3-btn-secondary);
     box-shadow: 0 4px var(--t3-shadow-secondary);
+}
+
+@media screen and (min-width: 478px){
+    .outer p{
+
+    }
 }
