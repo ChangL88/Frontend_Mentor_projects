@@ -40,10 +40,15 @@
     --t3-txt-primary:hsl(52, 100%, 62%);
     --t3-txt-secondary:hsl(198, 20%, 13%);
 }
-html, main, .container{
-    height: 85vh;
+
+html{
+    min-width: 325px;
 }
 
+html, main, .container{
+    height: 85vh;
+    /* min-width: 325px; */
+}
 
 
 body{
@@ -54,11 +59,10 @@ body{
     padding: 1.5rem 1rem;
     color: white;
     height: 100%;
+    max-width: 30rem;
+    min-width: 277px;
+    margin: 8px auto;
 }
-
-
-
-
 
 
 
@@ -66,7 +70,7 @@ h6{
     margin: 0;
     font-weight: bold;
     font-size: 32px;
-    align-self: flex-end;
+    margin-right: auto;
 }
 
 p{
@@ -77,11 +81,17 @@ p{
     margin: 0px;
 }
 
+
 .outer p{
     font-size: 12px;
     font-weight: bold;
-    margin-left: 80px;
     margin-bottom: 6px;
+    margin-right: .5rem;
+    padding-right: 32px;
+    /* position: absolute; */
+    /* right: 90px; */
+    margin-right: 8px;
+    /* display: flex; */
 }
 
 .theme{
@@ -97,14 +107,12 @@ input:checked{
 .theme_count{
     background-color: var(--t1-pad-bg);
     display: flex;
-    position: absolute;
-    right: 24px;
+    position: relative;
+    right: 10px;
     font-size: 12px;
     height: 28px;
     align-self: flex-end;
     border-radius: 48px;
-    justify-items: space-between;
-    
 }
 
 .theme_count span{
@@ -116,10 +124,6 @@ input:checked{
     margin: 0px 8px;
     text-align: justify;
     text-align-last: justify;
-    /* padding: 0 16px;
-    margin: 0 16px; */
-    /* justify-content: center; */
-    
 }
 
 
@@ -132,7 +136,7 @@ label{
 
 div.outer{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 
@@ -349,4 +353,10 @@ div.theme{
     color: var(--t3-txt-secondary);
     background-color: var(--t3-btn-secondary);
     box-shadow: 0 4px var(--t3-shadow-secondary);
+}
+
+@media screen and (min-width: 478px){
+    .outer p{
+
+    }
 }
