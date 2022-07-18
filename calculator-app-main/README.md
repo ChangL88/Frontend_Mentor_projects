@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/ChangL88/Frontend_Mentor_projects/tree/master/calculator-app-main
+- Solution URL: https://www.frontendmentor.io/solutions/calculator-app-RXBWUHdHw3
 - Live Site URL: https://changl88.github.io/Frontend_Mentor_projects/calculator-app-main/
 
 ## My process
