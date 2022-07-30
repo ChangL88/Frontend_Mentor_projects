@@ -1,0 +1,7 @@
+install node
+cd to folder
+npx create-react-app "app name"
+
+cd to folder
+npm start
+If eslint error, save package.json and try again
