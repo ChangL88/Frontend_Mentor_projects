@@ -1,0 +1,17 @@
+{
+	"folders": [
+        {
+            "path": ".."
+        },
+        {
+            "path": "..\\..\\..\\Desktop\\NucampFolder\\2-Bootstrap\\nucampsite"
+        },
+        {
+            "path": "..\\..\\..\\Desktop\\NucampFolder\\3-React"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Javascript",
+        "liveServer.settings.port": 5501
+    }
+}
