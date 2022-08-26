@@ -2,6 +2,7 @@ const li = document.querySelectorAll("li");
 const amount = document.getElementsByClassName("amount");
 
 
+
 fetch("./data.json")
 .then(response => {
     return response.json();
@@ -19,10 +20,11 @@ fetch("./data.json")
 
 
         if (data[i].amount == highest){
-            li[i].style.backgroundColor = "#76b5bc";
+            li[i].setAttribute('id', 'highest')
         }
     }
 })
+
 
 
 
