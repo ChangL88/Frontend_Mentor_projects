@@ -1,6 +1,6 @@
 # Frontend Mentor - Expenses chart component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt).
+This is a solution to the [Expenses Chart Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt).
 
 ## Description
 
@@ -8,8 +8,11 @@ The Challenge was to build the component and to make it look as close to the des
 
 ### Screenshot of the page
 
+![image](https://user-images.githubusercontent.com/97469046/186796017-55886241-67d3-4dd3-b4fe-2dd95db543d0.png)
 
-* Live demo: https://changl88.github.io/Frontend_Mentor_projects/interactive-rating-component-main/
+
+
+* Live demo: https://changl88.github.io/Frontend_Mentor_projects/expenses-chart-component-main/
 
 ### Goal of the project
 
