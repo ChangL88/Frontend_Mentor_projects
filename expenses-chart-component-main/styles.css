@@ -1,6 +1,8 @@
 :root{
  --soft_red: hsl(10, 79%, 65%);
+ --soft_red_opaque: hsl(10, 79%, 65%, 0.6);
  --cyan: hsl(186, 34%, 60%);
+ --cyan_opaque: hsl(186, 34%, 60%, 0.6);
  --dark_brown: hsl(25, 47%, 15%);
  --medium_brown: hsl(28, 10%, 53%);
  --cream: hsl(27, 66%, 92%);
@@ -105,6 +107,10 @@ p{
     justify-content: center;
 }
 
+.spending li:hover{
+    background-color: var(--soft_red_opaque);
+}
+
 
 
 .spending li .day{
@@ -130,6 +136,14 @@ p{
 
 hr{
     border: solid var(--cream) 1px;
+}
+
+#highest{
+    background-color: var(--cyan);
+}
+
+#highest:hover{
+    background-color: var(--cyan_opaque);
 }
 
 /* Lower box - Bottom */
