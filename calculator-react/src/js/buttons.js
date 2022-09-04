@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Screen from './screen';
 
 const Buttons = () => {
     const [res, setRes] = useState('0');
@@ -26,9 +27,7 @@ const Buttons = () => {
     }
 
     const calc = () =>{
-        console.log(res)
         let result = eval(res);
-        console.log(result)
         setRes(result);
     }
 
@@ -111,7 +110,7 @@ const Buttons = () => {
     return ( 
     <div>
         <div className="result">
-            <h2>{res}</h2>
+            <Screen result = {res} />
         </div>
         <div className="keypad ">
             <button onClick={() => handleClick('7')}>7</button>
