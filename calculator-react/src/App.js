@@ -1,5 +1,6 @@
 import './styles.css';
 import Buttons from './js/buttons';
+import Theme from './js/theme';
 
 function App() {
   return (
@@ -9,12 +10,7 @@ function App() {
             <div className="outer">
                 <h6>calc</h6>
                 <p>THEME</p>
-                <div className="theme">
-                    <div className="theme_count ">
-                        <span>1 2 3</span>
-                        <input type="range" min="1" max="3" defaultValue="1" id="slider" className="slider " />
-                    </div>
-                </div>
+                <Theme />
             </div>
             <Buttons />
         </div>

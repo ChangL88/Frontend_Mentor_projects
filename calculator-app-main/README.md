@@ -1,39 +1,25 @@
-# Frontend Mentor - Calculator app solution
+# Frontend Mentor - Expenses chart component solution
 
-This is a solution to the [Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Expenses Chart Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29).
 
-## Table of contents
+## Description
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
+The Challenge was to build the component and to make it look as close to the design as possible.
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+### Screenshot of the page
 
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- See the size of the elements adjust based on their device's screen size
-- Perform mathmatical operations like addition, subtraction, multiplication, and division
-- Adjust the color theme based on their preference
-- **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
+![image](https://user-images.githubusercontent.com/97469046/186796017-55886241-67d3-4dd3-b4fe-2dd95db543d0.png)
 
 
-### Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/calculator-app-RXBWUHdHw3
-- Live Site URL: https://changl88.github.io/Frontend_Mentor_projects/calculator-app-main/
+* Live demo: https://changl88.github.io/Frontend_Mentor_projects/calculator-app-main/
 
-## My process
+### Goal of the project
 
-### Built with
+The purpose for this project was to practice vanilla HTML, CSS, and Javascript to go over what I've learned during Coding bootcamp.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+### Technology / language used
+
+* HTML
+* CSS
+* Javascript
