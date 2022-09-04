@@ -8,7 +8,7 @@ The Challenge was to build the component and to make it look as close to the des
 
 ### Screenshot of the page
 
-![image](https://user-images.githubusercontent.com/97469046/186796017-55886241-67d3-4dd3-b4fe-2dd95db543d0.png)
+![image](https://user-images.githubusercontent.com/97469046/188338175-2bdda385-7ead-4f11-8dbe-b418405584b9.png)
 
 
 
