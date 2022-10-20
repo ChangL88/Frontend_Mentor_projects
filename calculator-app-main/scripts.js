@@ -4,6 +4,7 @@ const theme_count = document.querySelector(".theme_count");
 const result = document.querySelector(".result");
 const keypad = document.querySelector(".keypad");
 const h2 = document.querySelector('h2');
+const git = document.querySelector('.github img')
 
 // Theme slider tracker
 function track_slider() {
@@ -18,7 +19,8 @@ function track_slider() {
 // Theme Color Changer
 slider.oninput = () => {
     let slider_val = slider.value;
-    
+
+    git.src = "./images/GitHub-Mark-Light-32px.png";
     slider.classList.remove("theme2");
     slider.classList.remove("theme3");
     body.classList.remove("theme2");
@@ -35,6 +37,7 @@ slider.oninput = () => {
         theme_count.classList.add("theme2");
         result.classList.add("theme2");
         keypad.classList.add("theme2");
+        git.src = "./images/GitHub-Mark-32px.png";
     }
     else if(slider_val == 3){
         slider.classList.add("theme3");
@@ -42,6 +45,7 @@ slider.oninput = () => {
         theme_count.classList.add("theme3");
         result.classList.add("theme3");
         keypad.classList.add("theme3");
+        git.src = "./images/GitHub-Mark-Light-32px.png";
     }
 }
 
