@@ -8,6 +8,12 @@
         },
         {
             "path": "..\\..\\..\\Desktop\\NucampFolder\\3-React"
+        },
+        {
+            "path": "../../../Desktop/NucampFolder/5-NodeJS-Express-MongoDB"
+        },
+        {
+            "path": "../../../source/repos"
         }
     ],
     "settings": {

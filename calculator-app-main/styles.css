@@ -47,7 +47,6 @@ html{
 
 html, main, .container{
     height: 85vh;
-    /* min-width: 325px; */
 }
 
 
@@ -64,13 +63,18 @@ body{
     margin: 8px auto;
 }
 
+.github{
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    text-decoration: none;
+}
 
 
 h6{
     margin: 0;
     font-weight: bold;
     font-size: 32px;
-    margin-right: auto;
 }
 
 p{
@@ -88,10 +92,7 @@ p{
     margin-bottom: 6px;
     margin-right: .5rem;
     padding-right: 32px;
-    /* position: absolute; */
-    /* right: 90px; */
     margin-right: 8px;
-    /* display: flex; */
 }
 
 .theme{
